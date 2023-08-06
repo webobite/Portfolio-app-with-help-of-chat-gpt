@@ -69,6 +69,16 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   background-color: #2d2d2d;
+  background: red;
+}
+
+.terminal-section.css-3su884-MuiPaper-root {
+  background:#300A24;
+  color: #fff;
+}
+
+.section-header {
+  color: #42e818;
 }
 
 .terminal-name {

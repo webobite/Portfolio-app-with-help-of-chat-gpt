@@ -139,7 +139,7 @@ function App() {
               className="terminal-section"
               ref={(el) => (sections.current[0] = el)}
             >
-              <Typography variant="h6">About Me</Typography>
+              <Typography className="section-header"  variant="h6">About Me</Typography>
               <Typography variant="body1">
                 Hello, I am a passionate software engineer with a strong focus
                 on building scalable and efficient web applications. I have a
@@ -153,7 +153,7 @@ function App() {
               className="terminal-section"
               ref={(el) => (sections.current[1] = el)}
             >
-              <Typography variant="h6">Education</Typography>
+              <Typography className="section-header"  variant="h6">Education</Typography>
               <ul className="terminal-list">
                 <li>
                   <SchoolIcon /> Degree Name - University Name - Year of Passing
@@ -166,7 +166,7 @@ function App() {
               className="terminal-section"
               ref={(el) => (sections.current[2] = el)}
             >
-              <Typography variant="h6">Current Position</Typography>
+              <Typography className="section-header"  variant="h6">Current Position</Typography>
               <Typography variant="body1">
                 Software Engineer at XYZ Company
               </Typography>
@@ -176,7 +176,7 @@ function App() {
               className="terminal-section"
               ref={(el) => (sections.current[3] = el)}
             >
-              <Typography variant="h6">Technical Skills</Typography>
+              <Typography className="section-header"  variant="h6">Technical Skills</Typography>
               <div className="terminal-skills">
                 <div className="skill-name">Language 1</div>
                 <Rating
@@ -207,7 +207,7 @@ function App() {
               className="terminal-section"
               ref={(el) => (sections.current[4] = el)}
             >
-              <Typography variant="h6">Projects Undertaken</Typography>
+              <Typography className="section-header"  variant="h6">Projects Undertaken</Typography>
               <ul className="terminal-list">
                 <li>
                   <WorkIcon /> Project 1 - Description of Project 1
@@ -223,7 +223,7 @@ function App() {
               className="terminal-section"
               ref={(el) => (sections.current[5] = el)}
             >
-              <Typography variant="h6">Hobbies</Typography>
+              <Typography className="section-header"  variant="h6">Hobbies</Typography>
               <ul className="terminal-list">
                 <li>
                   <SportsEsportsIcon /> Gaming
@@ -239,7 +239,7 @@ function App() {
               className="terminal-section"
               ref={(el) => (sections.current[6] = el)}
             >
-              <Typography variant="h6">Contact Details</Typography>
+              <Typography  className="section-header" variant="h6">Contact Details</Typography>
               <Typography variant="body1">
                 <EmailIcon /> your-email@example.com
               </Typography>
@@ -248,7 +248,7 @@ function App() {
               </Typography>
             </Paper>
             <Paper elevation={3} className="terminal-section">
-              <Typography variant="h6">Contact me</Typography>
+              <Typography  className="section-header" variant="h6">Contact me</Typography>
               <form onSubmit={handleFormSubmit}>
                 <div className="terminal-submit-form">
                   <TextField
@@ -307,7 +307,7 @@ function App() {
             }
           }}
         >
-          <ArrowUpwardIcon />
+          <ArrowUpwardIcon color="info" />
         </IconButton>
         <IconButton
           className="scroll-button-down"
