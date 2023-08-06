@@ -102,6 +102,37 @@ function App() {
       </header>
       <Container maxWidth="lg" className="terminal-container">
         <Grid container spacing={2}>
+          <Grid item xs={12} md={3}>
+            <Paper elevation={3} className="terminal-section">
+              <Typography variant="h6">Sections</Typography>
+              <List component="nav">
+                <ListItem button onClick={() => scrollToSection(0)}>
+                  <ListItemText primary="About Me" />
+                </ListItem>
+                <ListItem button onClick={() => scrollToSection(1)}>
+                  <ListItemText primary="Education" />
+                </ListItem>
+                <ListItem button onClick={() => scrollToSection(2)}>
+                  <ListItemText primary="Current Position" />
+                </ListItem>
+                <ListItem button onClick={() => scrollToSection(3)}>
+                  <ListItemText primary="Technical Skills" />
+                </ListItem>
+                <ListItem button onClick={() => scrollToSection(4)}>
+                  <ListItemText primary="Projects Undertaken" />
+                </ListItem>
+                <ListItem button onClick={() => scrollToSection(5)}>
+                  <ListItemText primary="Hobbies" />
+                </ListItem>
+                <ListItem button onClick={() => scrollToSection(6)}>
+                  <ListItemText primary="Contact Details" />
+                </ListItem>
+                <ListItem button onClick={() => scrollToSection(7)}>
+                  <ListItemText primary="Contact me" />
+                </ListItem>
+              </List>
+            </Paper>
+          </Grid>
           <Grid item xs={12} md={9}>
             <Paper
               elevation={3}
@@ -217,7 +248,7 @@ function App() {
               </Typography>
             </Paper>
             <Paper elevation={3} className="terminal-section">
-              <Typography variant="h6">Contact form</Typography>
+              <Typography variant="h6">Contact me</Typography>
               <form onSubmit={handleFormSubmit}>
                 <div className="terminal-submit-form">
                   <TextField
@@ -256,34 +287,6 @@ function App() {
                   </Button>
                 </div>
               </form>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <Paper elevation={3} className="terminal-section">
-              <Typography variant="h6">Sections</Typography>
-              <List component="nav">
-                <ListItem button onClick={() => scrollToSection(0)}>
-                  <ListItemText primary="About Me" />
-                </ListItem>
-                <ListItem button onClick={() => scrollToSection(1)}>
-                  <ListItemText primary="Education" />
-                </ListItem>
-                <ListItem button onClick={() => scrollToSection(2)}>
-                  <ListItemText primary="Current Position" />
-                </ListItem>
-                <ListItem button onClick={() => scrollToSection(3)}>
-                  <ListItemText primary="Technical Skills" />
-                </ListItem>
-                <ListItem button onClick={() => scrollToSection(4)}>
-                  <ListItemText primary="Projects Undertaken" />
-                </ListItem>
-                <ListItem button onClick={() => scrollToSection(5)}>
-                  <ListItemText primary="Hobbies" />
-                </ListItem>
-                <ListItem button onClick={() => scrollToSection(6)}>
-                  <ListItemText primary="Contact Details" />
-                </ListItem>
-              </List>
             </Paper>
           </Grid>
         </Grid>
