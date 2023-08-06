@@ -104,7 +104,7 @@ function App() {
         <Grid container spacing={2}>
           <Grid item xs={12} md={3}>
             <Paper elevation={3} className="terminal-section">
-              <Typography variant="h6">Sections</Typography>
+              <Typography className="section-header" variant="h6">Sections</Typography>
               <List component="nav">
                 <ListItem button onClick={() => scrollToSection(0)}>
                   <ListItemText primary="About Me" />
@@ -127,9 +127,9 @@ function App() {
                 <ListItem button onClick={() => scrollToSection(6)}>
                   <ListItemText primary="Contact Details" />
                 </ListItem>
-                <ListItem button onClick={() => scrollToSection(7)}>
+                {/* <ListItem button onClick={() => scrollToSection(7)}>
                   <ListItemText primary="Contact me" />
-                </ListItem>
+                </ListItem> */}
               </List>
             </Paper>
           </Grid>
@@ -247,7 +247,7 @@ function App() {
                 <PhoneIcon /> +1 123-456-7890
               </Typography>
             </Paper>
-            <Paper elevation={3} className="terminal-section">
+            {/* <Paper elevation={3} className="terminal-section">
               <Typography  className="section-header" variant="h6">Contact me</Typography>
               <form onSubmit={handleFormSubmit}>
                 <div className="terminal-submit-form">
@@ -287,7 +287,7 @@ function App() {
                   </Button>
                 </div>
               </form>
-            </Paper>
+            </Paper> */}
           </Grid>
         </Grid>
       </Container>
