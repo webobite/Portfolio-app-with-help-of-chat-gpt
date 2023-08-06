@@ -1,0 +1,159 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1c1c1c;
+  color: #d3d3d3;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d2d;
+  padding: 10px;
+}
+
+.terminal-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.terminal-info {
+  text-align: right;
+  color: white;
+}
+
+.terminal-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.terminal-designation {
+  font-size: 18px;
+  color: #d3d3d3;
+}
+
+.terminal-social-links {
+  margin-top: 10px;
+}
+
+.terminal-social-link {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.terminal-social-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.terminal-social-link a:hover {
+  color: #d3d3d3;
+}
+
+.terminal-container {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.terminal-section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #2d2d2d;
+}
+
+.terminal-name {
+  color: #00bfff;
+}
+
+.terminal-designation {
+  color: #d3d3d3;
+}
+
+.terminal-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.terminal-list li {
+  margin-bottom: 5px;
+}
+
+.terminal-skills {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.terminal-footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #2d2d2d;
+  text-align: center;
+  color: #d3d3d3;
+}
+
+.scroll-buttons {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.scroll-button-up {
+  margin-bottom: 10px;
+}
+
+.scroll-button-down {
+  margin-top: 10px;
+}
+
+/* Submit Form Styles */
+/* Submit Form Styles */
+.terminal-submit-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Display form elements in a column */
+}
+
+.terminal-submit-form .MuiTextField-root {
+  margin-bottom: 10px;
+}
+
+.terminal-submit-button {
+  margin-top: 10px;
+  width: 100%;
+}
+.contact-form-submit-btn {
+  width: 25%;
+}
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .terminal-section {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .terminal-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .terminal-name {
+    font-size: 1.2rem;
+  }
+
+  .terminal-designation {
+    font-size: 0.9rem;
+  }
+
+  .terminal-list {
+    padding-left: 10px;
+  }
+}
