@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import {
   CssBaseline,
   Container,
@@ -10,8 +10,6 @@ import {
   List,
   ListItem,
   ListItemText,
-  TextField,
-  Button,
 } from "@mui/material";
 import DeveloperImage from "./developer-image.png";
 import SchoolIcon from "@mui/icons-material/School";
@@ -31,9 +29,9 @@ import "./App.css"; // Import custom CSS for terminal styling
 
 function App() {
   const sections = useRef([]);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [note, setNote] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [note, setNote] = useState("");
 
   // Scroll to a specific section
   const scrollToSection = (index) => {
@@ -46,15 +44,15 @@ function App() {
     sections.current = document.querySelectorAll(".terminal-section");
   }, []);
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    // Do something with the form data, e.g., send it to a server
-    console.log({ name, email, note });
-    // Clear the form fields after submission
-    setName("");
-    setEmail("");
-    setNote("");
-  };
+  // const handleFormSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Do something with the form data, e.g., send it to a server
+  //   console.log({ name, email, note });
+  //   // Clear the form fields after submission
+  //   setName("");
+  //   setEmail("");
+  //   setNote("");
+  // };
 
   return (
     <React.Fragment>
